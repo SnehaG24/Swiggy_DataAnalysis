@@ -75,7 +75,6 @@ where orders.date  LIKE '_____07___'
 group by orders.r_id
 order by count(orders.order_id) DESC LIMIT 1);
 
-
 -- restaurants with monthly sales greater than x for 
 
 select restaurants.r_name , sum(orders.amount)
